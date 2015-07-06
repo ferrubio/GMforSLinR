@@ -5,24 +5,24 @@ DOWNLOAD THIS TOOLBOX AND UNZIP IT INTO ANY FOLDER (CALLED *$MATLAB_CODE HERE*)
 
 DOWNLOAD THE PART A - PATH 1 OF FREIBURG, LJUBLJANA AND SAARBRUCKEN SEQUENCES FROM COLD DATASET (http://www.cas.kth.se/COLD/downloads.php), INTO *$MATLAB_CODE/dataset/COLD/* WITH THE NEXT STRUCTURE
 
-      $MATLAB_CODE/dataset/COLD/Freiburg/seq1_cloudy1.tar
+      $MATLAB_CODE/datasets/COLD/Freiburg/seq1_cloudy1.tar
       ...
-      $MATLAB_CODE/dataset/COLD/Freiburg/seq1_sunny4.tar
-      $MATLAB_CODE/dataset/COLD/Ljubljana/seq1_cloudy1.tar
+      $MATLAB_CODE/datasets/COLD/Freiburg/seq1_sunny4.tar
+      $MATLAB_CODE/datasets/COLD/Ljubljana/seq1_cloudy1.tar
       ...
-      $MATLAB_CODE/dataset/COLD/Ljubljana/seq1_sunny3.tar
-      $MATLAB_CODE/dataset/COLD/Saarbrucken/seq1_cloudy1.tar
+      $MATLAB_CODE/datasets/COLD/Ljubljana/seq1_sunny3.tar
+      $MATLAB_CODE/datasets/COLD/Saarbrucken/seq1_cloudy1.tar
       ...
-      $MATLAB_CODE/dataset/COLD/Saarbrucken/seq1_night3.tar
+      $MATLAB_CODE/datasets/COLD/Saarbrucken/seq1_night3.tar
 
 ALSO DOWNLOAD THE DUMBO AND MINNIE SEQUENCES FROM KTH-IDOL2 DATASET(http://www.cas.kth.se/IDOL/#Download) INTO *$MATLAB_CODE/KTH-IDOL* WITH THE NEXT STRUCTURE
 
-      $MATLAB_CODE/dataset/KTH-IDOL/dum_cloudy1.tar
+      $MATLAB_CODE/datasets/KTH-IDOL/dum_cloudy1.tar
       ...
-      $MATLAB_CODE/dataset/KTH-IDOL/dum_sunny4.tar
-      $MATLAB_CODE/dataset/KTH-IDOL/min_cloudy1.tar
+      $MATLAB_CODE/datasets/KTH-IDOL/dum_sunny4.tar
+      $MATLAB_CODE/datasets/KTH-IDOL/min_cloudy1.tar
       ...
-      $MATLAB_CODE/dataset/KTH-IDOL/min_sunny4.tar
+      $MATLAB_CODE/datasets/KTH-IDOL/min_sunny4.tar
 
 TO CREATE THE FOLDER STRUCTURE THAT OUR FUNCTIONS NEED, TWO SHELL SCRIPT MUST BE LAUNCH FROM THE TERMINAL
 
