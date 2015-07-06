@@ -60,7 +60,8 @@ LEARN DIFFERENTS TRAINING MODELS AND TEST THEM
         in order to extract all the features and store them in the correct directory 
         structure.
 
-    + Prove different combinations for completeProcessCV. The variables and their options are detailed in the comments.
+    + Prove different combinations for completeProcessCV. The variables and their 
+      options are detailed in the comments.
 	
 
 THIS CODE INCLUDES FUNCTIONS TO EXTRACT PHOG DESCRIPTORS OF DIFFERENT IMAGES AND TO LEARN BAYESIAN NETWORKS WITH DIFFERENT ALGORITHMS.
