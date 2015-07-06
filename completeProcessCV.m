@@ -171,9 +171,14 @@ for folds=1:numFolds
     dataResults.accuracy=accuracy;
     dataResults.cMat=cMat1;
 
-    outFile = fullfile('.', 'output', ...
-        sprintf('resultsCV%d_dataset%d_robot%d_descriptor%d_classifier%d_n%d_typeSVM%d.mat',folds, dataset,robot,descriptor,classifier,n,typeSVM));
-
+    if (classifier~=0)
+        outFile = fullfile('.', 'output', ...
+        sprintf('resultsCV%d_dataset%d_robot%d_classifier%d_n%d_numFolds%d.mat',folds, dataset,robot,classifier,n,numFolds));
+    else        
+        outFile = fullfile('.', 'output', ...
+        sprintf('resultsCV%d_dataset%d_robot%d_classifier%d_n%d_numFolds%d_SVM%d_balan%d.mat',folds, dataset,robot,classifier,n,numFolds,SVMoptions(1),SVMoptions(2)));
+    end
+    
     if (~exist('output','dir'))
         mkdir('output');
     end
@@ -182,8 +187,13 @@ for folds=1:numFolds
 
 end
 totalAccuracy=totalAccuracy/numFolds;
-outFile = fullfile('.', 'output', ...
-        sprintf('resultsCV_dataset%d_robot%d_descriptor%d_classifier%d_n%d_typeSVM%d.mat', dataset,robot,descriptor,classifier,n,typeSVM));
+if classifier~=0
+    outFile = fullfile('.', 'output', ...
+        sprintf('resultsCV_dataset%d_robot%d_classifier%d_n%d_numFolds%d.mat', dataset,robot,classifier,n,numFolds));
+else
+    outFile = fullfile('.', 'output', ...
+        sprintf('resultsCV_dataset%d_robot%d_classifier%d_n%d_numFolds%d_SVM%d_balan%d.mat', dataset,robot,classifier,n,numFolds,SVMoptions(1),SVMoptions(2)));
+end
 save(outFile,'totalAccuracy');
 
 end
