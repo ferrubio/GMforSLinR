@@ -86,13 +86,15 @@ else
     p.Bins=n; 
 end
 
-if (classifier>2)
-    addpath(genpath('Bayesian_Networks'));
-    
-    ns=[4*ones(1,n),numClasses];
-end
-
 features=p.extract();
+
+ns=ones(1,size(features,2));
+
+if classifier>1
+    addpath(genpath('Reduction_and_Discretized'));
+    features=discretized(features,ns);
+    ns=[4*ones(1,size(features,2)),numClasses];
+end
 
 
 % Clasificador
@@ -128,10 +130,8 @@ for folds=1:numFolds
     classesForTraining=classes(indexForTraining,:);
     classesForTest=classes(indexForTest,:);
     
-    if classifier>1
-        addpath(genpath('Reduction_and_Discretized'));
-        featuresForTraining=discretized(featuresForTraining);
-        featuresForTest=discretized(featuresForTest);
+    if (classifier>2)
+        addpath(genpath('Bayesian_Networks'));
     end
 
     if(classifier==0)
