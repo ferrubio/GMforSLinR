@@ -31,7 +31,7 @@ classdef PHOG < Descriptors
             variables=obj.Bins;
             if obj.Level~=0
                 for i=1:obj.Level
-                    variables=variables+4^i*360;
+                    variables=variables+4^i*obj.Bins;
                 end
             end
             
