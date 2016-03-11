@@ -3,17 +3,17 @@ BASIC STEPS TO REPRODUCE THE COMPARATIVE STUDY OF BAYESIAN NETWORKS
 
 DOWNLOAD THIS TOOLBOX AND UNZIP IT INTO ANY FOLDER (CALLED *$MATLAB_CODE HERE*)
 
-DOWNLOAD THE PART A - PATH 1 OF FREIBURG, LJUBLJANA AND SAARBRUCKEN SEQUENCES FROM COLD DATASET (http://www.cas.kth.se/COLD/downloads.php), INTO *$MATLAB_CODE/dataset/COLD/* WITH THE NEXT STRUCTURE
+DOWNLOAD FREIBURG, LJUBLJANA AND SAARBRUCKEN SEQUENCES FROM COLD DATASET (http://www.cas.kth.se/COLD/downloads.php), INTO *$MATLAB_CODE/dataset/COLD/* WITH THE NEXT STRUCTURE
 
       $MATLAB_CODE/datasets/COLD/Freiburg/seq1_cloudy1.tar
       ...
-      $MATLAB_CODE/datasets/COLD/Freiburg/seq1_sunny4.tar
+      $MATLAB_CODE/datasets/COLD/Freiburg/seq3_sunny3.tar
       $MATLAB_CODE/datasets/COLD/Ljubljana/seq1_cloudy1.tar
       ...
-      $MATLAB_CODE/datasets/COLD/Ljubljana/seq1_sunny3.tar
+      $MATLAB_CODE/datasets/COLD/Ljubljana/seq2_sunny3.tar
       $MATLAB_CODE/datasets/COLD/Saarbrucken/seq1_cloudy1.tar
       ...
-      $MATLAB_CODE/datasets/COLD/Saarbrucken/seq1_night3.tar
+      $MATLAB_CODE/datasets/COLD/Saarbrucken/seq4_sunny3.tar
 
 ALSO DOWNLOAD THE DUMBO AND MINNIE SEQUENCES FROM KTH-IDOL2 DATASET(http://www.cas.kth.se/IDOL/#Download) INTO *$MATLAB_CODE/datasets/KTH-IDOL* WITH THE NEXT STRUCTURE
 
