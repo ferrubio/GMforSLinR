@@ -20,7 +20,7 @@ function [data]=discretized(data,ns)
     for j=1:n
         if (ns(j)==1)
             for i=1:m
-                for k=1:4
+                for k=1:length(points)
                     if points(k)> data(i,j)
                         data(i,j)=k;
                         break;
